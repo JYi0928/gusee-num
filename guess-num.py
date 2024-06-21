@@ -4,7 +4,12 @@
 # 猜錯的話 要告訴他 比答案大/小
 
 import random
-r = random.randint(1,100)
+start = input('請輸入隨機數字開始值:')
+end = input('請輸入隨機數字結束值:')
+start = int(start)
+end = int(end)
+
+r = random.randint(start , end)
 count = 0
 while True :
 	count = count + 1 #count+= 1
@@ -18,4 +23,4 @@ while True :
 		print('比答案大')
 	elif num < r :
 	    print('比答案小')	
-	print('這是你猜的第' , count , '次')
+	print('這是你猜的第' , count , '次') 
